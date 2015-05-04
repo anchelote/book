@@ -8359,7 +8359,42 @@ button.close {
 .jumbotron {
   margin: 50px auto 0 auto;
 }
-.nav {
-  background: rgba(200, 200, 200, 0.5) !important;
+html {
+  position: relative;
+  min-height: 100%;
+}
+.fuentetitulo {
+  font-family: 'Sarpanch', sans-serif;
+}
+.fuentecuerpo {
+  font-family: 'Palanquin Dark', sans-serif;
+}
+.acero {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #000;
+  font-family: 'Palanquin Dark', sans-serif;
+}
+.botonlogin {
+  font-size: 30px;
+}
+.lineanav {
+  line-height: 50px;
+}
+.navbar {
+  background: rgba(200, 200, 200, 0.8) !important;
+}
+.boton-nav {
+  background: #bbbbbb;
+  color: #222222;
+  border: solid 1px #888888;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin: 5px;
+  font-family: 'Sarpanch', sans-serif;
+  font-size: 2em;
 }
 /*# sourceMappingURL=/styles/main.css.map */
