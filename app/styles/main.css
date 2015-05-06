@@ -8376,6 +8376,9 @@ html {
 .pad10 {
   padding: 10px;
 }
+.pad20 {
+  padding: 20px;
+}
 .padh1 {
   padding: 0 0 15px 40px;
 }
@@ -8419,8 +8422,22 @@ a.deco:visited {
 .botonlogin {
   font-size: 20px;
 }
+.login {
+  width: 450px;
+  padding: 0 20px 20px;
+  margin: 20px auto;
+  border: solid 2px #222222;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
 .lineanav {
   line-height: 50px;
+}
+.logoback {
+  float: left;
+  height: 50px;
+  width: 125px;
 }
 .navbar {
   background: rgba(200, 200, 200, 0.8) !important;
@@ -8443,14 +8460,14 @@ a.deco:visited {
 .mtop {
   height: 220px;
 }
-.mbot {
-  height: 350px;
+.pbot {
+  margin-bottom: 150px;
 }
 .mtopsm {
   height: 90px;
 }
-.mbotsm {
-  height: 150px;
+.pbotsm {
+  margin-bottom: 150px;
 }
 .mosaicoh {
   top: 200px;
@@ -8473,11 +8490,62 @@ a.deco:visited {
   z-index: 20;
 }
 footer {
+  color: #bbbbbb;
   background: #000;
   border-top: solid 2px #888888;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 110px;
+  padding: 20px;
+}
+.sprite {
+  background: url("../images/spritexs.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.sprite:hover {
+  background: url("../images/sprite.gif");
+}
+div .ico-1 {
+  background-position: 0 0px;
+}
+div .ico-1:hover {
+  background-position: 0 0px;
+}
+div .ico-2 {
+  background-position: 0 -50px;
+}
+div .ico-2:hover {
+  background-position: 0 -50px;
+}
+div .ico-3 {
+  background-position: 0 -100px;
+}
+div .ico-3:hover {
+  background-position: 0 -100px;
+}
+div .ico-4 {
+  background-position: 0 -150px;
+}
+div .ico-4:hover {
+  background-position: 0 -150px;
+}
+div .ico-5 {
+  background-position: 0 -200px;
+}
+div .ico-5:hover {
+  background-position: 0 -200px;
+}
+.socialul {
+  width: 200px;
+}
+.social {
+  list-style-type: none;
+  float: left;
+  width: 25%;
 }
 /*# sourceMappingURL=/styles/main.css.map */

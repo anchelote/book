@@ -1,0 +1,17 @@
+/* TEAM */
+Autor: Ángel Benedí
+Site: www.pinguinomecanico.com
+Twitter: @PinguinoMecanic
+Location: Zaragoza, Aragón, Spain
+
+/* THANKS */
+Name: www.asesformacion.com
+
+/* SITE */
+Last update: 2015/05/07
+
+Standards: HTML5, CSS3, PHP5
+
+Components: Bootstrap, Jquery, Modernizr, FontAwesome
+
+Software: Brackets, Gimp, Grunt, NodeJS, Bower

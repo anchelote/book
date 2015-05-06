@@ -30,6 +30,8 @@ html {
 @gris: #888;
 @grisoscuro: #222;
 @grisclaro: #bbb;
+@medidasprite: 50px;
+@numerosprites: 5;
 
 //mixins
 
@@ -44,10 +46,20 @@ html {
 .fuentecuerpo {font-family: 'Palanquin Dark', sans-serif;}
 .acero {margin: 0; padding: 0;}
 .pad10 {padding: 10px;}
+.pad20 {padding: 20px;}
 .padh1 {padding: 0 0 15px 40px;}
 .bloque {display: block;}
 
-//codigo
+//////////// loops
+.loop (@counter) when (@counter>0) {
+    .loop((@counter - 1));
+    .ico-@{counter} {
+        background-position: 0 -(@medidasprite*(@counter - 1));
+        &:hover {background-position: 0 -(@medidasprite*(@counter - 1));}
+    }
+}
+///////////// Código
+
 body {
     background: #fff;
     .fuentecuerpo;
@@ -88,7 +100,20 @@ a.deco {
     font-size: 20px;
 }
 
+.login {
+    width: 450px;
+    padding: 0 20px 20px;
+    margin: 20px auto;
+    .bordes(2px,@grisoscuro,5px);
+}
+
 .lineanav {line-height: 50px;}
+
+.logoback {
+    float: left;
+    height: 50px;
+    width: 125px;
+}
 
 .navbar {background: rgba(200,200,200,0.8) !important;}
 
@@ -109,15 +134,15 @@ a.deco {
 .mtop {
     height: 220px;
 }
-.mbot {
-    height: 350px;
+.pbot {
+    margin-bottom: 150px;
 }
 
 .mtopsm {
     height: 90px;
 }
-.mbotsm {
-    height: 150px;
+.pbotsm {
+    margin-bottom: 150px;
 }
 
 
@@ -141,10 +166,37 @@ a.deco {
     z-index: 20;
 }
 footer {
+    color: @grisclaro;
     background: #000;
     border-top: solid 2px @gris;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 110px;
+    padding: 20px;
+}
+
+.sprite {
+    background: url("../images/spritexs.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: @medidasprite;
+    height: @medidasprite;
+    float: left;
+    &:hover {
+        background: url("../images/sprite.gif");
+    }
+}
+
+div {
+    .loop(5);
+}
+.socialul {
+    width: 200px;
+}
+
+.social {
+    list-style-type: none;
+    float:left;
+    width: 25%;
 }
