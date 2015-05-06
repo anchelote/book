@@ -9,7 +9,7 @@
     <title>Fotografía Pingüino Mecánico</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='http://fonts.googleapis.com/css?family=Sarpanch:400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Palanquin+Dark' rel='stylesheet' type='text/css'>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/main.css">
@@ -21,20 +21,81 @@
 <!--    menu superior-->
 <nav class="navbar navbar-fixed-top">
   <div class="container lineanav">
-    <div class="col-sm-2"><img src="images/logo.png" alt="Logo" width="250" height="100" class="img-responsive"></div>
-    <div class="col-sm-8">
+      <div class="col-xs-8 col-sm-3 col-md-2"><a href="index.html"><img src="images/logo.png" alt="Logo" width="250" height="100" class="img-responsive"></a></div>
+    <div class="pull-right visible-xs">
+    <a href="gestion/index.html" class="botonlogin"><i class="fa fa-sign-in"></i></a>
+    </div>
+    <div class="col-sm-6">
        <ul class="list-inline">
-        <li class="col-xs-12 col-sm-4 boton-nav text-center">Galería</li>
-        <li class="col-xs-12 col-sm-4 boton-nav text-center">Contacto</li>
-        <li class="col-xs-12 col-sm-3">Sprites varios</li>
+           <li class="col-xs-12 col-sm-4"><a href="galeria.html" class="deco boton-nav text-center">Galería</a></li>
+           <li class="col-xs-12 col-sm-4"><a href="contacto.html" class="deco boton-nav text-center">Contacto</a></li>
         </ul>
     </div>
-    <div class="pull-right lineanav">
-        <a href="gestion/index.html"><i class="fa fa-sign-in botonlogin"></i></a>
+    <ul class="nav navbar-nav navbar-right hidden-xs">
+        <li><a href="gestion/index.html" class="botonlogin"><i class="fa fa-sign-in"></i></a></li>
+    </ul>
     </div>
   </div>
 </nav>
-<!--cuerpo-->
+<!--cuerpo xs-->
+    
+<div id="cuerpoxs" class="visible-xs visible-sm">
+   <div class="visible-xs mtop"></div>
+   <div class="visible-sm mtopsm"></div>
+    <div>
+     <h1 class="text-center">Pingüino Mecánico<br><small>Foto-Video-Web</small></h1>
+     <p class="text-justify">En 2015 un grupo de frikis que formaban una cuadrilla fueron despedidos por unos desfalcos que no habían cometido. No tardaron en fugarse de la situación en la que se encontraban recluídos. Hoy, deseados todavía por muchas empresas, sobreviven como informáticos de fortuna.<br>
+     Si tiene una necesidad digital y nos contacta, quizá pueda contratarnos.</br>
+     <hr>
+    Nuestros servicios son:</p>
+     <ul>
+         <li>Fotografía social, arquitectónica, de paisaje, de naturaleza, de mascotas, de producto y todo lo que se pueda imaginar.</li>
+         <li>Producción y edición de vídeo tanto para uso comercial como privado.</li>
+         <li>Diseño y programación web personalizada y con las últimas técnicas.</li>
+     </ul>     
+ </div>
+    <hr>
+     <div class="col-xs-10 col-xs-offset-1 visible-xs">
+        <div id="mozaico2" class="carousel slide visible-xs" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/portada_00.jpg" alt="..." width="400" height="267" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="images/portada_01.jpg" alt="..." width="400" height="267" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="images/portada_02.jpg" alt="..." width="400" height="267" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="carousel slide visible-sm" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="images/slider_00.jpg" alt="..." width="2000" height="1333">
+        </div>
+        <div class="item">
+            <img src="images/slider_01.jpg" alt="..." width="2000" height="1333">
+        </div>
+        <div class="item">
+            <img src="images/slider_02.jpg" alt="..." width="2000" height="1333">
+        </div>
+        <div class="item">
+            <img src="images/slider_03.jpg" alt="..." width="2000" height="1333">
+        </div>
+        <div class="item">
+            <img src="images/slider_04.jpg" alt="..." width="2000" height="1333">
+        </div>
+        <div class="item">
+            <img src="images/slider_05.jpg" alt="..." width="2000" height="1333">
+        </div>
+    </div>
+</div>
+</div>
+<div class="visible-xs mbot"></div>
+<div class="visible-sm mbotsm"></div>
+<!--cuerpo MD-->
 
 <!--              fondo carrusel -->
 <div id="fondo" class="carousel slide visible-md visible-lg" data-ride="carousel">
@@ -60,62 +121,68 @@
   </div>
 </div>
 <!--cuerpo flotante-->
-<div id="cuerpoflotante" class="container-fluid row visible-md visible-lg">
+<div id="cuerpoflotante" class="container-fluid row col-md-10 col-md-offset-1 visible-md visible-lg">
  <div class="col-md-6">
-     <h1>Estudio Pingüino Mecánico</h1>
-     Fotografía social, arquitectónica, de paisaje, de naturaleza, de mascotas, de producto y todo lo que se pueda imaginar.
-     
+     <h1>Pingüino Mecánico<br><small>Foto-Video-Web</small></h1>
+     En 2015 un grupo de frikis que formaban una cuadrilla fueron despedidos por unos desfalcos que no habían cometido. No tardaron en fugarse de la situación en la que se encontraban recluídos. Hoy, deseados todavía por muchas empresas, sobreviven como informáticos de fortuna.<br>
+     Si tiene una necesidad digital y nos contacta, quizá pueda contratarnos.</br>
+     Nuestros servicios son:
+     <ul>
+         <li>Fotografía social, arquitectónica, de paisaje, de naturaleza, de mascotas, de producto y todo lo que se pueda imaginar.</li>
+         <li>Producción y edición de vídeo tanto para uso comercial como privado.</li>
+         <li>Diseño y programación web personalizada y con las últimas técnicas.</li>
+     </ul>     
  </div>
   <div class="col-md-6">
-   <div class="col-md-6 acero col-md-offset-6">
-       <div id="mozaico1" class="carousel slide visible-md visible-lg" data-ride="carousel">
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="images/portada_05.jpg" alt="..." width="267" height="400" class="img-responsive">
+    <div class="col-md-6 acero col-md-offset-6">
+        <div id="mozaico1" class="carousel slide visible-md visible-lg" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/portada_05.jpg" alt="..." width="267" height="400" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="images/portada_06.jpg" alt="..." width="267" height="400" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="images/portada_07.jpg" alt="..." width="267" height="400" class="img-responsive">
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="item">
-      <img src="images/portada_06.jpg" alt="..." width="267" height="400" class="img-responsive">
+    <div class="col-md-6 acero">
+        <div id="mozaico2" class="carousel slide visible-md visible-lg" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/portada_00.jpg" alt="..." width="400" height="267" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="images/portada_01.jpg" alt="..." width="400" height="267" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="images/portada_02.jpg" alt="..." width="400" height="267" class="img-responsive">
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="item">
-      <img src="images/portada_07.jpg" alt="..." width="267" height="400" class="img-responsive">
+    <div class="col-md-6 acero">
+        <div id="mozaico3" class="carousel slide visible-md visible-lg" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/portada_03.jpg" alt="..." width="400" height="267" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="images/portada_04.jpg" alt="..." width="400" height="267" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="images/portada_08.jpg" alt="..." width="400" height="267" class="img-responsive">
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-   </div>
-   <div class="col-md-6 acero">
-       <div id="mozaico2" class="carousel slide visible-md visible-lg" data-ride="carousel">
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="images/portada_00.jpg" alt="..." width="400" height="267" class="img-responsive">
-    </div>
-    <div class="item">
-      <img src="images/portada_01.jpg" alt="..." width="400" height="267" class="img-responsive">
-    </div>
-    <div class="item">
-      <img src="images/portada_02.jpg" alt="..." width="400" height="267" class="img-responsive">
-    </div>
-  </div>
-</div>
-   </div>
-   <div class="col-md-6 acero">
-       <div id="mozaico3" class="carousel slide visible-md visible-lg" data-ride="carousel">
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="images/portada_03.jpg" alt="..." width="400" height="267" class="img-responsive">
-    </div>
-    <div class="item">
-      <img src="images/portada_04.jpg" alt="..." width="400" height="267" class="img-responsive">
-    </div>
-    <div class="item">
-      <img src="images/portada_08.jpg" alt="..." width="400" height="267" class="img-responsive">
-    </div>
-  </div>
-</div>
-   </div>
- </div>
 </div>
 <!--pie-->
-<footer>
+<footer class="">
     copyright lalala etc
 </footer>
 

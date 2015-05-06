@@ -7,29 +7,95 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
-    <meta name="description" content="">
+    <meta name="description" content="Fotografía social, arquitectónica, de paisaje, de naturaleza, de mascotas, de producto y todo lo que se pueda imaginar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Palanquin+Dark' rel='stylesheet' type='text/css'>
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p>You now have</p>
-        <ul>
-          <li>HTML5 Boilerplate</li>
-          <li>Bootstrap</li>
-          <li>Font Awesome <i class="fa fa-flag"></i></li>
-        </ul>
-        <p>installed.</p>
-        <h3>Enjoy coding! - Yeoman</h3>
-      </div>
+    <!--    menu superior-->
+<nav class="navbar navbar-fixed-top">
+  <div class="container lineanav">
+      <div class="col-xs-8 col-sm-3 col-md-2"><a href="index.html"><img src="images/logo.png" alt="Logo" width="250" height="100" class="img-responsive"></a></div>
+    <div class="pull-right visible-xs">
+    <a href="gestion/index.html" class="botonlogin"><i class="fa fa-sign-in"></i></a>
     </div>
+    <div class="col-sm-6">
+       <ul class="list-inline">
+           <li class="col-xs-12 col-sm-4"><a href="galeria.html" class="deco boton-nav text-center">Galería</a></li>
+           <li class="col-xs-12 col-sm-4"><a href="contacto.html" class="deco boton-nav text-center">Contacto</a></li>
+        </ul>
+    </div>
+    <ul class="nav navbar-nav navbar-right hidden-xs">
+        <li><a href="gestion/index.html" class="botonlogin"><i class="fa fa-sign-in"></i></a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+<!--cuerpo-->
+<!--cuerpo xs-->
+<div class="cuerpoxs visible-xs visible-sm">
+    <div class="visible-xs mtop"></div>
+    <div class="visible-sm mtopsm"></div>
+            <h1 class="padh1 text-center">Galería de proyectos</h1>
+    <a href="#" class="deco">
+      <div class="col-xs-10 col-xs-offset-1 panel panel-default pad10">
+        <div class="col-xs-5"><img src="images/galeria_01_thumb.jpg" alt="Farola de Rota" class="img-responsive img-thumbnail"></div>
+        <div class="col-xs-7 col-md-offset-1 panel-body">
+            <h4 class="visible-xs">Arquitectura andaluza</h4>
+            <h3 class="visible-sm">Arquitectura andaluza</h3>
+            <p>Elementos arquitectónicos y decorativos propios de la cultura andaluza.</p>
+        </div>
+    </div>
+    </a>
+    <div class="visible-xs mbot"></div>
+    <div class="visible-sm mbotsm"></div>
+</div>
 
+<!--              fondo carrusel -->
+<div id="fondo" class="carousel slide visible-md visible-lg" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/slider_00.jpg" alt="..." width="2000" height="1333">
+    </div>
+    <div class="item">
+      <img src="images/slider_01.jpg" alt="..." width="2000" height="1333">
+    </div>
+    <div class="item">
+      <img src="images/slider_02.jpg" alt="..." width="2000" height="1333">
+    </div>
+    <div class="item">
+      <img src="images/slider_03.jpg" alt="..." width="2000" height="1333">
+    </div>
+    <div class="item">
+      <img src="images/slider_04.jpg" alt="..." width="2000" height="1333">
+    </div>
+    <div class="item">
+      <img src="images/slider_05.jpg" alt="..." width="2000" height="1333">
+    </div>
+  </div>
+</div>
+<!--cuerpo flotante-->
+<div id="cuerpoflotante" class="container-fluid row col-md-10 col-md-offset-1 visible-md visible-lg">
+   <h1 class="padh1">Galería de proyectos</h1>
+    <a href="#" class="deco">
+      <div class="col-md-10 col-md-offset-1 panel panel-default pad10">
+        <div class="col-md-2"><img src="images/galeria_01_thumb.jpg" alt="Farola de Rota" class="img-responsive img-thumbnail"></div>
+        <div class="col-md-9 col-md-offset-1 panel-body">
+            <h3>Arquitectura andaluza</h3>
+            <p>Elementos arquitectónicos y decorativos propios de la cultura andaluza.</p>
+        </div>
+    </div>
+    </a>
+</div>
+<footer class="">
+    copyright lalala etc
+</footer>
 
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -47,7 +113,7 @@
 
 
         <!-- build:js scripts/main.js -->
-        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/hello.js"></script>
         <!-- endbuild -->
