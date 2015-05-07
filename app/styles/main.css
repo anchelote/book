@@ -8379,6 +8379,9 @@ html {
 .pad20 {
   padding: 20px;
 }
+.mar10lados {
+  margin: 0 10px;
+}
 .padh1 {
   padding: 0 0 15px 40px;
 }
@@ -8388,6 +8391,7 @@ html {
 body {
   background: #fff;
   font-family: 'Palanquin Dark', sans-serif;
+  font-size: 14px;
 }
 h1,
 h2,
@@ -8458,15 +8462,9 @@ a.deco:visited {
   padding: 20px;
 }
 .mtop {
-  height: 220px;
+  height: 40px;
 }
 .pbot {
-  margin-bottom: 150px;
-}
-.mtopsm {
-  height: 90px;
-}
-.pbotsm {
   margin-bottom: 150px;
 }
 .mosaicoh {
@@ -8479,7 +8477,7 @@ a.deco:visited {
   min-height: 100%;
 }
 #cuerpoflotante {
-  margin-top: 15%;
+  margin-top: 10%;
   margin-bottom: 120px;
   background: rgba(200, 200, 200, 0.8);
   border: solid 2px #222222;
@@ -8547,5 +8545,13 @@ div .ico-5:hover {
   list-style-type: none;
   float: left;
   width: 25%;
+  font-size: 48px;
+  margin: -10px 0 10px;
+}
+.iconos {
+  color: #ffad40 !important;
+}
+.iconos:hover {
+  color: #ff9200 !important;
 }
 /*# sourceMappingURL=/styles/main.css.map */

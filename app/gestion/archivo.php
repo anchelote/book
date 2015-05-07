@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
-    <meta name="description" content="">
+    <meta name="description" content="Archivo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="../styles/main.css">
@@ -16,19 +16,45 @@
     <!-- endbuild -->
   </head>
   <body>
-   <form action="principal.php" method="post" class="login">
-   <h3>Acceso restringido</h3>
-    <div class="form-group">
-        <label for="exampleInputEmail1">Email</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  <nav class="navbar navbar-default">
+  <div class="container">
+      <div class="logoback"><a href="principal.php"><img src="../images/logo.png" alt="Logo" class="img-responsive"></a></div>
+    <ul class="nav navbar-nav pull-left">
+        <li><a href="archivo.php">Galería nueva</a></li>
+        <li><a href="usuarios.php">Usuarios</a></li>
+      </ul>
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html" class="botonlogin"><span class="glyphicon glyphicon-log-out"></span></a></li>
+    </ul>
     </div>
-    <div class="form-group">
-        <label for="exampleInputPassword1">Contraseña</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="contraseña">
-    </div>
-    <button type="submit" class="btn btn-default">Entrar</button>
+  </div>
+</nav>
+
+<form action="#" method="post" class="pad20 col-sm-8 col-sm-offset-2">
+  <div class="form-group">
+    <label for="titulo">Titulo</label>
+    <input type="text" class="form-control" id="titulo" placeholder="Título de la galería">
+  </div>
+  <div class="form-group">
+    <label for="contenido">Contenido</label>
+    <textarea name="contenido" id="contenido" class="form-control" rows="10"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="archivos">Subir archivos</label>
+    <input type="file" id="archivos">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
 </form>
-<!--[if lt IE 7]>
+
+<footer>
+    <div>
+       <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Angel
+    </div>
+    <div>
+       <span class="glyphicon glyphicon-time" aria-hidden="true"></span> Última conexión:
+    </div>
+</footer>
+    <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
